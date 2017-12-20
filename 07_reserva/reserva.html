@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+		}
+
+		div#cabecera{
+			width: auto;
+			height: 150px;
+			background-color: #454545;
+			text-align: center;
+		}
+		img#logo{
+			float:left;
+			position: relative;
+			left: 100px;
+		}
+		.titulo{
+			font-size: 60px;
+			color: white;
+		}
+
+		div#contenedor{
+			border: 5px solid black;
+			width: auto;
+			height: 1000px;
+		}
+		form{			
+			font-size: 35px;
+			display: table;
+			text-align: justify;
+			width: 70%;
+			height:70%;
+			margin: auto;
+			float: right;
+		}
+		label, input{
+			margin: 5% 10px;
+		}
+
+		div#izq{
+			width: 48%;
+			height: 100%;
+			float: left;
+		}
+		div#dch{
+			width: 48%;
+			height: 100%;
+			float: right;
+			text-align: center;
+			padding-right: 4%;
+			padding-top: 1%
+		}
+		div#img{
+
+			height: 50%;
+			width: auto;
+		}
+		div#vid{
+			height: 50%;
+			width: auto;
+		}
+		div#footer{
+			width: auto;
+			height: 300px;
+		}
+		div#img{
+			float: right;
+		}
+		div#vid{
+			float: right;
+			padding-top: 7px;
+		}
+		
+
+	</style>
+	<title>Reserva hotel</title>
+</head>
+<body>
+
+	<div id="cabecera">
+		<img id="logo" src="img/logo-hotel.png" alt="logo-hotel">
+		<p class="titulo"> HOTEL</p>
+	</div>
+
+	<div id="contenedor">
+
+		<div id="izq">
+			<form method="post" action="destino.php" >
+				<h2>RESERVA HOTEL </h2>
+
+				<label for="correo">E-Mail</label>
+				<input type="email" name="correo" id="correo"><br>
+
+				<label for="personas">Personas</label>
+				<input type="number" name="personas" id="personas" min="1" max="4"><br>
+
+				<label for="fecha">Entrada</label>
+				<input type="date" name="entrada" id="entrada"><br>
+
+				<label for="fecha">Salida</label>
+				<input type="date" name="salida" id="salida"><br>
+
+				<label for="noches">Noches</label>
+				<input type="range" name="noches" id="noches" min="1" max="5"><br>
+
+				<label for="acepto">Acepto los terminos y condiciones</label>
+				<input type="checkbox" name="acepto" id="acepto"><br>
+
+				<input type="submit" name="enviar" id="enviar" value="Enviar"><br>
+			</form>
+
+		</div>
+		<div id="dch">
+			<div id="img">
+				<img src="img/piscina-hotel.jpg" alt="piscina-hotel">
+			</div>
+			<div id="vid">
+				<iframe width="700px" height="455px" src="https://www.youtube.com/embed/AOp5Nh7FSJA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		
+		<div id="mapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82940.83667288219!2d-0.4158192627073676!3d39.417175333437285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0xb4a351011f7f1d39!2sValencia!5e0!3m2!1ses!2ses!4v1513797699264" width="100%" height="300px"  frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+
+	</div>
+
+
+</body>
+</html>
